@@ -1,0 +1,330 @@
+.mainBlock{
+    background-color: #ececec;
+    box-shadow: 0px 0vw 4vw 7px rgb(0 0 0 / 26%);
+    border: 1px solid #c2bfbf;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    font-family: jaf-facitweb,Arial,Helvetica,sans-serif;
+}
+
+.mainWrap{
+    display: flex;
+    justify-content: center;
+}
+
+.headerRow{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.headerLogo{
+    width: 100%;
+    background: linear-gradient(180deg,#fafafa 0%,#d7d7dc 100%);
+}
+.ol{
+    display: table-row;
+    margin: 0;
+    padding: 0 0 0.7em 1.4em;
+}
+
+.li{
+    display: table-cell;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #e9e3e3;
+    counter-increment: step2;
+}
+.navStep{
+    font-size: 1.8rem;
+    margin-top: 0;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+}
+
+.div{
+    padding: 0.9324em 1.4em 0.9324em 0;
+    background: linear-gradient(#fffafa,#aca6a0);
+    color: #6a5d5d;
+}
+
+.navStep::before{
+    background-color: #503c3c;
+    color: #b9b3ae;
+    display: inline-block;
+    margin: 0 0.7em;
+    content: counter(step2,decimal);
+    text-align: center;
+    height: 1.5em;
+    line-height: 1.5em;
+    width: 1.5em;
+    border-radius: 4em;
+}
+
+.div::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.div::before{
+    content: "";
+    display: table;
+}
+
+.yellowBanner{
+    background-color: #ffdc00;
+    padding: 50px 15px 50px 15px;
+    margin-top: 1px;
+}
+
+.yellowBannerTitle{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #503d3c;
+    font-size: 24px;
+}
+
+.yellowBannerText{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.yellowBannerTitle h1{
+    margin: 0;
+}
+
+.yellowBannerText p{
+    margin: 0;
+}
+
+.extrasWrap{
+    display: flex;
+    justify-content: center;
+    margin: 30px 15px 0 15px;
+}
+
+.extrassList{
+    list-style: none;
+    padding: 0;
+}
+
+.extrassList li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.extrassIcons{
+    height: 40px;
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.extrasTitle{
+    font-size: 42px;
+}
+
+.extrasSubTitle{
+    font-size: 22px;
+}
+
+.extrasPoints{
+    padding-left: 20px;
+}
+
+.extrasContent{
+    max-width: 300px;
+    padding-left: 40px;
+}
+
+.extrassListItem{
+    display: flex;
+    align-content: center;
+}
+
+.packageModule{
+    background-color: #fffafa;
+    border: 2px solid #c0adad;
+    display: flex;
+    max-width: 600px;
+    margin: 30px 15px 30px 15px;
+    padding-bottom: 20px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+.packageContent{
+    max-height: 181px;
+    max-width: 400px;
+    margin: 20px 15px 0 20px;
+}
+
+.packageText{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.packageTitle{
+    max-width: 350px;
+}
+
+.saveIcon{
+    max-width: 100%;
+    height: auto;
+}
+
+.paraText{
+    color: #503d3cba;
+    font-weight: 400;
+    margin: 0;
+}
+
+.titleText{
+    color: #503d3c;
+    font-weight: 700;
+    margin: 0;
+}
+
+.moduleText{
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    background-color: #fffafa;
+    border: 2px solid #c0adad;
+}
+
+td:nth-child(even) {
+    background-color: #ececec;
+}
+
+tr{
+    vertical-align: middle;
+}
+
+.tableTitle div{
+    display: flex;
+    align-items: center;
+}
+
+.coverTable{
+    margin: 10px;
+    max-width: 800px;
+}
+
+.tableTitle{
+    width: 45%;
+    padding: 15px 20px 15px 20px;
+    color: #503d3cdb;
+
+}
+
+.tableContent{
+    padding: 15px 20px 15px 20px;
+}
+
+.tbTitleCont{
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.coversHeader{
+    margin: 30px;
+    text-align: center;
+}
+.coversHeaderContent{
+    padding-top: 10px;
+}
+
+.coverTitle{
+    padding-left: 15px;
+}
+.coverDescPoint{
+    font-weight: 700;
+    padding-top: 10px;
+    color: #503d3cdb;
+}
+
+@media screen and (max-width: 890px){
+    .navStep{
+        font-size: 24px;
+    }
+    .div{
+        padding: 0.9324em 10px 0.9324em 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navStep{
+        font-size: 20px;
+    }
+    .headerLogo{
+        display: none;
+    }
+    .div{
+        padding: 0.9324em 10px 0.9324em 10px;
+    }
+}
+@media screen and (max-width: 631px){
+    .navStep{
+        font-size: 18px;
+    }
+    .yellowBanner{
+        text-align: center;
+    }
+    .div{
+        padding: 0.9324em 10px 0.9324em 10px;
+    }
+}
+
+@media screen and (max-width: 617px){
+    .navStep{
+        font-size: 18px;
+        white-space: normal;
+        text-align: center;
+    }
+    .yellowBanner{
+        text-align: center;
+    }
+    .navStep::before{
+        margin-bottom: 5px;
+    }
+    .div{
+        padding: 0.9324em 10px 0.9324em 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .packageContent{
+        max-height: none;
+    }
+
+    .skullIcon{
+
+    }
+
+    .coverDescription{
+        text-align: center;
+    }
+
+
+
+}

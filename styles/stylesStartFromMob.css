@@ -1,0 +1,1181 @@
+.mainBlock{
+    background-color: #ececec;
+    box-shadow: 0px 0vw 4vw 7px rgb(0 0 0 / 26%);
+    border: 1px solid #c2bfbf;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    font-family: jaf-facitweb,Arial,Helvetica,sans-serif;
+    align-items: center;
+}
+
+.mainWrap{
+    display: flex;
+    justify-content: center;
+}
+
+.coverStepBody{
+    width: 100%;
+    display: contents;
+}
+
+.quoteSummaryBody{
+    width: 100%;
+    display: none;
+}
+
+.body-wrap{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oneMoreThingWrap{
+    background-color: white;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/*header*/
+.logoImg{
+    height: inherit;
+    padding-left: 15px;
+}
+
+.navRow{
+    display: flex;
+    width: 100%;
+}
+
+.navStepWrap{
+    background: linear-gradient(#f9f5f5,#cfcacaed,#503d3c73,#503d3ce3);
+    color: #493939c9;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #e9e3e3;
+    width: 25%;
+    display: flex;
+    text-align: center;
+    padding: 15px 10px;
+    counter-increment: step2;
+}
+
+.headerRow{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.headerLogo{
+    width: 100%;
+    background: linear-gradient(90deg, #FFFFFF 0%, #cacaca7a 25%, #bfbab6ba 40%, #c9b5b585 80%, #e9e9e8c9 95%, #ffffff 100% );
+    height: 65px;
+}
+
+.navStep{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navStep::before{
+    background-color: #493939c9;
+    color: #b9b3ae;
+    display: inline-block;
+    content: counter(step2,decimal);
+    text-align: center;
+    height: 1.5em;
+    line-height: 1.5em;
+    width: 1.5em;
+    border-radius: 4em;
+    margin: 5px;
+}
+
+.navActiveStep::before{
+    background-color: #ffdc00;
+    color: #503d3c;
+    display: inline-block;
+    content: counter(step2,decimal);
+    text-align: center;
+    height: 1.5em;
+    line-height: 1.5em;
+    width: 1.5em;
+    border-radius: 4em;
+    margin: 5px;
+}
+
+.activeStep{
+    background: linear-gradient(#503d3cf2, #503d3cf0, #503d3cc4, #a97b37eb);
+    color: #ffdc00;
+}
+
+/*.notActiveStep{*/
+/*    display: none;*/
+/*}*/
+
+/*yellow Banner*/
+.yellowBanner{
+    background-color: #ffdc00;
+    padding: 50px 0 50px 0;
+    margin-top: 1px;
+    width: inherit;
+    text-align: center;
+}
+
+.yellowBannerTitle{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #503d3c;
+    font-size: 24px;
+}
+
+.yellowBannerText{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.yellowBannerTitle h1{
+    margin: 0;
+}
+
+.yellowBannerText p{
+    margin: 0;
+}
+
+/*Extra Care module*/
+
+.extrasWrap{
+    display: flex;
+    justify-content: center;
+    margin: 30px 15px 0 15px;
+    max-width: 300px;
+}
+
+.extrasBottomWrap{
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    background-color: #ffffff;
+    border: 2px solid #c0adad;
+    margin: 30px 5px 30px 5px;
+    padding: 25px 20px 15px 20px;
+    flex-direction: column;
+}
+
+.motorLegalProtExtrassWrap{
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    background-color: #ffffff;
+    border: 2px solid #c0adad;
+    margin: 30px 5px 15px 5px;
+    padding: 0 0 15px 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.motorLegalProtColumnWrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    margin: 30px 12px 20px 12px;
+    text-align: center;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*height: inherit;*/
+    justify-content: flex-end
+}
+
+.columnText{
+    height: 70%;
+    margin-top: 15px;
+}
+/*.courtIcon{*/
+/*    !*max-height: 162px;*!*/
+/*    width: inherit;*/
+
+/*}*/
+
+/*.moneyIcon{*/
+/*    !*max-height: 162px;*!*/
+/*    width: inherit;*/
+
+/*}*/
+
+.peopleIcon, .moneyIcon, .courtIcon{
+    width: 50%;
+    min-width: 60px;
+
+}
+
+.addExtrasTitleWrap{
+    margin: 25px 20px 10px 20px;
+}
+
+.addExtrassButtonWrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.addExtraCareYesButton, .addExtraCareNoButton{
+    margin: 5px;
+    height: 45px;
+    border-radius: 10px;
+    color: #503c3c;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #dddddd;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid #dddddd;
+}
+
+.extrassRadioButton{
+    display: block;
+    position: relative;
+    height: 45px;
+    border-radius: 10px;
+    color: #503c3c;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #dddddd;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 5px;
+}
+
+.extrassRadioButton input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.extrassRadioButton:hover{
+    background-color: #c0c0c0;
+    border-color: #c0c0c0;
+}
+
+.checkmark{
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 45px;
+     border-radius: 10px;
+     text-align: center;
+ }
+
+.extrassRadioButton input:checked ~ .checkmark {
+    background-color: #ffdc00;
+    border-color: #ffdc00;
+}
+
+/*.addExtraCareButtons:hover{*/
+/*    background-color: #c0c0c0;*/
+/*    border-color: #c0c0c0;*/
+/*}*/
+
+/*.addExtraCareButtons:active{*/
+/*    background-color: #ffdc00;*/
+/*    border-color: #ffdc00;*/
+/*}*/
+
+.footer{
+    background-color: #a9a9a9;
+    width: 100%;
+    height: 160px;
+    /*margin-top: 10px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continueCTA{
+    width: 270px;
+    height: 60px;
+    border-radius: 5px;
+    color: #808080;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #dddddd;
+    margin: 0 45px;
+    /*cursor: pointer;*/
+    box-shadow: none;
+    border: 1px solid #a9a9a9;
+
+}
+
+.addExtrasWrap{
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    background-color: #503c3c;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 30px 5px 30px 5px;
+    /*padding: 25px 20px 15px 20px;*/
+}
+
+.extrassBottomImg{
+    display: none;
+}
+
+.extrasImgAndList{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    justify-content: center;
+    padding-left: 100px;
+    background-image: url("../imgs/extra1.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.extrassList{
+    list-style: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.extrasBottomList{
+    list-style: none;
+    padding: 0;
+    /*padding-left: 15px;*/
+    margin-bottom: 0;
+}
+
+.extrassList  li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.extrasBottomList  li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.extrassIcons{
+    height: 40px;
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.extrasTitle{
+    font-size: 42px;
+}
+
+.extrasSubTitle{
+    font-size: 18px;
+    padding: 10px 15px 0 15px;
+
+}
+
+.extrasPoints{
+    padding-left: 12px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.extrasBottomPoints{
+    padding-left: 12px;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 600;
+    color: #503d3c;
+}
+
+.extrasContent{
+    max-width: 300px;
+    padding-left: 40px;
+}
+
+.extrassListItem{
+    display: flex;
+    align-content: center;
+}
+
+.extrassListWrap{
+    display: flex;
+    justify-content: center;
+}
+
+.extrasModuleBackImg{
+    margin: 30px 25px 0 25px;
+}
+
+/*module in border*/
+
+.packageModule{
+    background-color: #ffffff;
+    border: 2px solid #c0adad;
+    display: flex;
+    max-width: 600px;
+    margin: 30px 20px 30px 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.packageTitleWrap{
+    max-height: 181px;
+    max-width: 400px;
+    padding: 20px 105px 15px 20px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+.packageContent{
+    max-height: 181px;
+    max-width: 400px;
+    margin: 0 15px 0 20px;
+}
+
+.packageText{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.packageTitle{
+    max-width: 350px;
+}
+
+.saveIcon{
+    max-width: 100%;
+    height: auto;
+}
+
+.quoteDescriptionWrap{
+    background-color: #ffffff;
+    border: 2px solid #c0adad;
+    display: flex;
+    max-width: 600px;
+    margin: 30px 20px 30px 20px;
+    padding: 20px 30px;
+    flex-direction: column;
+}
+
+/*Covers*/
+
+.coverWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+.personalInjuriIcon{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/personalIconBorder.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 39px 39px;
+    padding: 5px 0 5px 45px;
+}
+
+.personalInjCoverImg{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/bones.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 298px auto;
+    margin: 20px 10px 0 10px;
+    padding-bottom: 145px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hireCarCoverImg{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/hireCar.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 298px auto;
+    margin: 20px 10px 0 10px;
+    padding-bottom: 220px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.keyCareCoverImg{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/keys.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 298px auto;
+    margin: 20px 10px 0 10px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-width: 600px;
+
+}
+
+.coverSubTitle{
+    /*font-weight: 700;*/
+    padding-top: 10px;
+    /*color: #503d3cdb;*/
+    margin: 0;
+    line-height: 22px;
+}
+
+.coverMobBottomSubTitle{
+    text-align: center;
+    /*font-weight: 700;*/
+    /*color: #503d3cdb;*/
+    font-size: 18px;
+    margin: 0 20px 0 20px;
+
+}
+
+.carCoverIcon{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/carIconBorder.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 39px 39px;
+    padding: 5px 0 5px 45px;
+}
+
+.keyCareCoverIcon{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/keyIconBorder.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 39px 39px;
+    padding: 5px 0 5px 45px;
+}
+
+.legalCoverIcon{
+    background-image: url(http://localhost:63342/ElephantHM/imgs/legalBigIcon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 39px 39px;
+    padding: 5px 0 5px 45px;
+
+}
+
+.legalCoverDeskriptionWrap{
+    margin: 20px 10px 0 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+/*table module*/
+
+.tableWrap{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 5px 40px 5px;
+    padding: 0 20px 0 20px;
+}
+
+.tableRow{
+    background-color: #ffffff;
+    border: 2px solid #c0adad;
+    padding: 10px 25px 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.tableTitle{
+    /*font-weight: 700;*/
+    font-size: 18px;
+    display: flex;
+    /*color: #503d3cdb;*/
+}
+
+.tableContent{
+    margin-left: 40px;
+    /*color: #503d3cba;*/
+    /*font-weight: 400;*/
+}
+
+.tbTitleCont{
+    padding-left: 10px;
+}
+
+/*covers*/
+.coversHeader{
+    margin: 30px;
+    text-align: center;
+}
+
+.coversHeaderContent{
+    padding-top: 10px;
+}
+
+.coverTitle{
+    padding-left: 10px;
+    text-align: center;
+}
+.extrasBottomTitle{
+    font-size: 32px;
+}
+
+.motorLegalExtrasBottomTitle{
+    font-size: 26px;
+    padding: 0 14px;
+    margin: 5px 0 0 0;
+    font-weight: 700;
+    color: #503d3c;
+}
+
+.motorLegalExtrasBottomSubTitle{
+    font-size: 18px;
+    font-weight: 600;
+    color: #503d3cba;
+}
+
+.addExtrasTitle{
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffdc00;
+    text-align: center;
+    line-height: 26px;
+}
+
+.addExtrasPriceTitle{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fafafa;
+    text-align: center;
+    line-height: 24px;
+}
+
+.extrasBottomSubTitle{
+    font-size: 26px;
+    font-weight: 600;
+    color: #503d3cba;
+}
+
+.addExtrasPriceSubTitle{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffdc00;
+    text-align: center;
+    line-height: 22px;
+    padding: 5px 0;
+
+}
+
+.extrassBottomSubTitleDesk{
+    display: none;
+}
+
+.addExtrasPriceSubTitleDesk{
+    display: none;
+}
+
+.coverDescPoint{
+    font-weight: 700;
+    padding-top: 10px;
+    color: #503d3cdb;
+}
+
+.youCoveredWrap{
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    margin: 15px 0;
+}
+
+.coverDevider{
+    margin: 30px;
+    text-align: center;
+}
+
+.youCoveredImg{
+    width: 35%;
+    /*padding-right: 30px;*/
+}
+
+.youCoveredListWrap{
+    display: flex;
+    align-items: center;
+    /*margin: 20px 0 20px 0;*/
+    margin-left: 30px;
+    justify-content: center;
+
+}
+
+.youCoveredTickIcon{
+    height: 40px;
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.youCoveredList{
+    list-style: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.youCoveredList li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+
+
+
+/*text types*/
+
+.paraText{
+    /*color: #503d3cba;*/
+    /*font-weight: 400;*/
+    margin: 0;
+}
+
+.titleText{
+    color: #503d3c;
+    font-weight: 700;
+    margin: 0;
+}
+
+.linkText{
+    font-weight: 600;
+    color: #007bfc;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.moduleText{
+    display: flex;
+    justify-content: center;
+}
+
+.boldSubText{
+    font-weight: 700;
+    color: #503d3cdb;
+
+}
+
+.lightSubText{
+    color: #503d3cba;
+    font-weight: 400;
+}
+
+.quoteSumDescText{
+    margin: 10px;
+    line-height: 24px;
+}
+
+.extraCareQuoteSum, .motorLegalQuoteSum{
+    color: #d7ba03;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*desktop/mob */
+@media screen and (min-width: 768px){
+    .extrasModuleBackImg{
+        background-image: url("../imgs/extra1.png");
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 159px auto;
+        padding-left: 25%;
+    }
+
+    .extrasImgAndList{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        background: none;
+        padding: 0;
+    }
+
+    .extrassList li{
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .extrassList{
+        padding: 0;
+        margin: 10px 0 10px 0;
+    }
+
+    .extrassListWrap{
+        /*display: flex;*/
+        justify-content: flex-start;
+    }
+
+    .extrasSubTitle{
+        font-size: 22px;
+        padding: 10px 0 0 0;
+    }
+
+    .extrasPoints{
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .packageModule{
+        background-image: url(../imgs/saveBage1.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: auto;
+        width: 600px;
+    }
+
+    .packageTitleWrap{
+        padding: 20px 105px 0 20px;
+    }
+
+    .mobContent{
+        display: none;
+    }
+
+    .personalInjCoverImg{
+        background-image: url(../imgs/skull.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        max-width: 600px;
+        padding: 0 0 0 200px;
+        margin: 30px 0 25px 0;
+        text-align: left;
+    }
+
+    .hireCarCoverImg{
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        max-width: 600px;
+        padding: 0 0 0 240px;
+        margin: 30px 0 25px 0;
+        text-align: left;
+    }
+
+    .keyCareCoverImg{
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        max-width: 600px;
+        padding: 0 0 0 240px;
+        margin: 30px 0 25px 0;
+        text-align: left;
+    }
+
+    .coverContent{
+        max-width: 350px;
+        line-height: 22px;
+    }
+
+    .tableWrap{
+        max-width: 740px;
+        border: 1px solid #c0adad;
+        padding: 0;
+        margin: 15px 20px 40px 20px;
+    }
+
+    .tableRow{
+        display: flex;
+        max-width: 740px;
+        padding: 0;
+        border: 1px solid #c0adad;
+        margin: 0;
+        min-height: 68px
+    }
+
+    .tableTitle{
+        border: 1px solid #c0adad;
+        margin: -1px 0 -1px -1px;
+        padding: 15px 30px 15px 20px;
+        /*width: 45%;*/
+        display: flex;
+        align-items: center;
+        min-width: 280px;
+    }
+
+    .tableContent{
+        background-color: #ececec;
+        border: 1px solid #c0adad;
+        margin: -1px -1px -1px 0;
+        padding: 15px 30px 15px 20px;
+        max-width: 405px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+
+    .motorLegalExtrasBottomTitle{
+        font-size: 30px;
+        padding: 0 20px;
+        margin: 5px 0 0 0;
+        font-weight: 700;
+        color: #503d3c;
+        max-width: 600px;
+    }
+
+    .motorLegalExtrasBottomSubTitle{
+        font-size: 20px;
+        font-weight: 600;
+        color: #503d3cba;
+    }
+
+    /*.motorLegalProtExtrassWrap{*/
+    /*    max-width: 700px;*/
+    /*    padding: 25px 0 0 0;*/
+    /*    margin: 30px 20px 15px 20px;*/
+    /*    border: none;*/
+    /*    align-items: center;*/
+    /*}*/
+
+}
+
+@media screen and (max-width: 767px){
+    .extrasWrap{
+        max-width: 600px;
+        text-align: center;
+        margin: 30px 5px 0 5px;
+    }
+
+    .yellowBanner{
+        padding: 30px 0 30px 0;
+    }
+
+    .yellowBannerWrap{
+        margin: 0 20px 0 20px;
+    }
+
+    .packageTitleWrap{
+        padding: 20px 105px 18px 20px;
+        background-image: url(../imgs/saveBage1.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 100px auto;
+        max-width: 346px;
+    }
+
+    .packageModule{
+        margin: 30px 5px 30px 5px;
+    }
+
+    .packageTitle{
+        font-size: 29px;
+    }
+
+    .packageText{
+        font-size: 20px;
+    }
+
+    .desktopContent{
+        display: none;
+    }
+
+    .personalInjuriIcon{
+        font-size: 12px;
+    }
+
+    .carCoverIcon{
+        font-size: 12px;
+    }
+
+    .keyCareCoverIcon{
+        font-size: 12px;
+    }
+
+    .legalCoverIcon{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 539px){
+    .navStep{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navStepWrap{
+        justify-content: center;
+    }
+
+    .navStepWrap{
+        margin-bottom: -1px;
+    }
+
+    .headerLogo{
+        display: none;
+    }
+
+    .youCoveredImg{
+        width: 40%;
+    }
+
+    .youCoveredListWrap{
+        margin-left: 5px;
+    }
+
+    .addMotorProtectionImg{
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 575px) {
+
+    .extrasBottomWrap {
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        padding: 25px 15px 0 15px;
+        margin: 30px 20px 30px 20px;
+        align-items: flex-end;
+    }
+
+    .extrassBottomImg {
+        padding: 0 45px 0 25px;
+        display: block;
+        max-height: 237px;
+    }
+
+    .extrasBottomTitle {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+
+    .extrasBottomSubTitle {
+        display: none;
+
+    }
+
+    .extrasBottomPoints {
+        color: #503d3cba;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .extrassBottomSubTitleDesk {
+        font-size: 22px;
+        font-weight: 600;
+        color: #503d3cba;
+        display: contents;
+    }
+
+    .addExtrasPriceSubTitleDesk {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffdc00;
+        display: contents;
+        line-height: 30px;
+    }
+
+    .addExtrasPriceTitle, .addExtrasTitle {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .addExtrasPriceSubTitle {
+        display: none;
+    }
+
+    .addExtrasTitleWrap {
+        margin: 30px 40px 10px 40px;
+    }
+
+    .extrasBottomList li {
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .extrasBottomList {
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    .addExtrassButtonWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 15px;
+    }
+
+    .addExtraCareYesButton, .addExtraCareNoButton {
+        width: 50%;
+        margin: 0 10px 0 20px;
+    }
+
+
+    .extrassRadioButton{
+        width: 50%;
+        margin: 0 10px 0 20px;
+    }
+
+    .footer {
+        /*height: 200px;*/
+        justify-content: flex-end;
+        /*margin-top: 20px;*/
+    }
+
+    .motorLegalProtExtrassWrap{
+        max-width: 700px;
+        padding: 0;
+        margin: 30px 20px 15px 20px;
+        border: none;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 575px) {
+        .extrasBottomList {
+            margin-bottom: 20px;
+        }
+
+        .extrasBottomTitle {
+            padding-top: 5px;
+        }
+
+    }
+
+}
+
